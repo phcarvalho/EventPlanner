@@ -11,8 +11,7 @@ Learn more about the Institute at [+Cidadania](http://www.maiscidadania.org.br/)
 
 This is a Event Planner to manage the Institute's volunteers who want to help at
 the application of the games in schools. The necessity of this planner comes
-from the rising number of people wanting to help. The idea is to create a
-system to control and give opportunity so everyone have a change to contribute.
+from the rising number of people wanting to help.
 
 In the actual scenario, people will send a message to the Institute every time
 a event is schedule and the Institute will select this volunteers by the order
