@@ -1,6 +1,6 @@
-const azure = require("azure-storage");
+const azure = require('azure-storage');
 
-const tableAuth = require(".././config/tableAuth");
+const tableAuth = require('.././config/tableAuth');
 
 const tableSvc = azure.createTableService(
   tableAuth.account,
@@ -13,11 +13,7 @@ class Azita {
   }
 
   init() {
-    tableSvc.createTableIfNotExists(tableAuth.table, function(
-      error,
-      result,
-      response
-    ) {
+    tableSvc.createTableIfNotExists(tableAuth.table, (error, result) => {
       if (!error) {
         console.log(result);
       }

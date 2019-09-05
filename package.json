@@ -1,0 +1,17 @@
+{
+  "name": "eventplanner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phcarvalho/EventPlanner.git",
+  "author": "Paulo Carvalho <carvalho.ph@live.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
