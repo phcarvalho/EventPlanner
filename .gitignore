@@ -86,3 +86,6 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Azure Table informations
+backend/src/config/tableAuth.js
