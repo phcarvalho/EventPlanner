@@ -13,9 +13,9 @@ class Azita {
   }
 
   init() {
-    tableSvc.createTableIfNotExists(tableAuth.table, (error, result) => {
-      if (!error) {
-        console.log(result);
+    tableSvc.createTableIfNotExists(tableAuth.table, error => {
+      if (error) {
+        console.log(error);
       }
     });
   }
