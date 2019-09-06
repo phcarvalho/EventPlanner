@@ -4,12 +4,16 @@ const user = require('./app/models/User');
 
 const routes = new Router();
 
-routes.get('/users', (req, res) => {
-  res.json({ message: 'Hello World!' });
-});
-
 routes.post('/users', async (req, res) => {
   const teste = await user.create(req, res);
+  res.json({ teste });
+});
+
+routes.get('/users', async (req, res) => {
+  const teste = await user.findAll({
+    attributes: ['RowKey', 'teste', 'number'],
+    top: 1,
+  });
   res.json({ teste });
 });
 

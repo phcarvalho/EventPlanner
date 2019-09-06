@@ -59,6 +59,35 @@ class Model {
       );
     });
   }
+
+  findAll(param) {
+    const query = new azure.TableQuery().where(
+      'PartitionKey eq?',
+      this.PartitionKey
+    );
+
+    if (param) {
+      if (param.top) {
+        query.top(param.top);
+      }
+
+      if (param.attributes) {
+        query.select(param.attributes);
+      }
+
+      if (param.where) {
+        // To do
+      }
+    }
+
+    return new Promise(resolve => {
+      tableSvc.queryEntities(tableAuth.table, query, null, (error, result) => {
+        if (!error) {
+          resolve(result);
+        }
+      });
+    });
+  }
 }
 
 module.exports = Model;
