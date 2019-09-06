@@ -18,6 +18,14 @@ a event is schedule and the Institute will select this volunteers by the order
 of registration. That has became a problem because some people are always
 selected and other never get a chance to participate.
 
+## Technologies
+
+- NodeJS at the backend
+- ReactJS at the frontend
+- React Native for the mobile
+- Using Azure Functions as the backend
+- Using Azure Table Storage to handle the data
+
 ## Features
 
 Some features that the Event Planner needs are:
