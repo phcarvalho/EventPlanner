@@ -17,17 +17,17 @@ class Model {
     this.PartitionKey = this.constructor.name;
   }
 
-  create(req) {
+  create(param) {
     return new Promise((resolve, reject) => {
       const body = {
         PartitionKey: { _: this.PartitionKey },
         RowKey: { _: uuid() },
       };
 
-      const keys = Object.keys(req.body);
+      const keys = Object.keys(param.body);
 
       keys.map(key => {
-        body[key] = { _: req.body[key] };
+        body[key] = { _: param.body[key] };
       });
 
       tableSvc.insertEntity(
